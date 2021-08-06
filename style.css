@@ -35,7 +35,7 @@ body {
 
 #card {
   height: 80vh;
-  width: 440px;
+  width: 380px;
 
   border-radius: 24px;
   overflow: hidden;
@@ -65,7 +65,7 @@ body {
 }
 
 #card #text h1 {
-  padding: 40px 0px 20px 0px;
+  padding: 30px 0px 10px 0px;
 }
 
 #card #text p {
@@ -76,12 +76,12 @@ body {
 }
 
 #card #summary {
-  height: 90px;
+  height: 70px;
   width: 80%;
   background: var(--very-pale-blue);
 
   border-radius: 10px;
-  padding: 16px;
+  padding: 10px;
 
   display: grid;
   grid-template-columns: 1.2fr 3fr 1.2fr;
@@ -101,7 +101,7 @@ body {
 }
 
 #card #summary #plan h2{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #card #summary #plan h2:last-child {
