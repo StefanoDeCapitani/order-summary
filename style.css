@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --active-states: rgba(118, 108, 241, 1);
+  --fs-p: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  background: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background_desktop {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+#card {
+  height: 80vh;
+  width: 440px;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 15px 30px rgba(118, 108, 241, 0.2);
+}
+
+#content{
+  height: 100%;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#illustration_hero {
+  width: 100%;
+}
+
+#card #text {
+  text-align: center;
+}
+
+#card #text h1 {
+  padding: 40px 0px 20px 0px;
+}
+
+#card #text p {
+  width: 30ch;
+
+  font-size: var(--fs-p);
+  color: grey;
+}
+
+#card #summary {
+  height: 90px;
+  width: 80%;
+  background: var(--very-pale-blue);
+
+  border-radius: 10px;
+  padding: 16px;
+
+  display: grid;
+  grid-template-columns: 1.2fr 3fr 1.2fr;
+  align-items: center;
+}
+
+#card #summary #icon_music {
+  padding-left: 10px;
+}
+
+#card #summary #plan {
+  padding-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#card #summary #plan h2{
+  font-size: 18px;
+}
+
+#card #summary #plan h2:last-child {
+  font-weight: 500;
+  color: gray;
+}
+
+#card #summary a {
+  text-align: center;
+  color: var(--bright-blue);
+}
+
+#card #summary a:hover {
+  color: var(--active-states);
+}
+
+button#payment {
+  width: 80%;
+  height: 50px;
+  background: var(--bright-blue);
+
+  border: none;
+  box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.5);
+
+  border-radius: 10px;
+  color: white;
+  font-size: var(--fs-p);
+  font-weight: 900;
+}
+
+button#payment:hover {
+  background: var(--active-states);
+}
+
+button#cancel {
+  width: 75%;
+  height: 50px;
+  background: none;
+
+  border: none;
+  margin-bottom: 5%;
+
+  color: grey;
+  font-size: var(--fs-p);
+  font-weight: 700;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  padding: 1rem;
+
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 400px) {
+  #card {
+    width: 350px;
+  }
+
+  #card #text h1 {
+    font-size: 25px;
+    padding: 30px 0px 10px 0px;
+  }
+
+  #card #text p {
+    font-size: 14px;
+  }
+
+  #card #summary{
+    height: 80px;
+  }
+
+  #card #summary #plan h2{
+    font-size: 16px;
+  }
+
+  #card #summary #plan a{
+    font-size: 14px;
+  }
+}
